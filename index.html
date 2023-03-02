@@ -11,15 +11,40 @@
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="main-title">Etch-a-Sketch</h1>
-    </div>
-
-    <div class="main-container">
-        <div class="container">
+    <div class="all-sections">
+        <div class="header">
+            <h1 class="main-title">Etch-a-Sketch</h1>
         </div>
-    </div>
 
+        <div class="main-container">
+            <div class="controls">
+                <div class="size-control">
+                    <h5 class="slider-output">Grid Size: 16 x 16</h5>
+                    <div class="slide">
+                        <input type="range" min="1" max="64" value="16" class="slider" id="size-range">
+                    </div>
+                </div>
+                <div class="buttons-container">
+                    <button class="default-button btn active">Default</button>
+                    <button class="rainbow-button btn">Rainbow</button>
+                    <div class="user-color-selector">
+                        <button class="color-select-button btn">Color Select</button>
+                        <input type="color" id="color-selector" value="#808080">
+                    </div>
+                    <button class="eraser-button btn">Eraser</button>
+                    <button class="clear-button">Clear</button>
+                </div>
+            </div>
+            <div class="outer-container">
+                <div class="container">
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h6>Developed by laUmar123 👋</h6>
+        </footer>
+    </div>
 </body>
 
 </html>
